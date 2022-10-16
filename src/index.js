@@ -1,4 +1,3 @@
 import "./sass/main.scss";
-import "./js/align.js";
-import './js/text.js';
-import './js/input.core.js'
+import './components/buttons/font.buttons.js';
+import './core/set.func.js'

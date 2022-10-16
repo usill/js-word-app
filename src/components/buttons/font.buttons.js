@@ -1,8 +1,13 @@
 const fontFamilySelect = document.querySelector('.font__family');
+const textarea = require('../textarea.js');
+
+fontFamilySelect.addEventListener('click', () => {
+  console.log(textarea.wordsArray);
+})
 
 const fonts = [
   {
-    name: "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
+    name: "Calibri, sans-serif",
     shortName: "Calibri",
   },
   {
@@ -14,11 +19,11 @@ const fonts = [
     shortName: "Arial",
   },
   {
-    name: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif",
+    name: "Geneva, Verdana, sans-serif",
     shortName: "Lucida", 
   },
   {
-    name: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+    name: "Roboto sans-serif",
     shortName: "roboto",
   }
 ]
@@ -36,3 +41,8 @@ fonts.forEach((item, i) => {
 })
 
 console.log(fontFamilySelect);
+
+
+class Font {
+  
+}
